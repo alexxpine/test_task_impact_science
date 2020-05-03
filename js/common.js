@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.JS-info-slider').slick({
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         swipe: true,
         asNavFor: '.JS-background-slider'
     });
@@ -10,12 +10,10 @@ $(document).ready(function () {
     $('.JS-background-slider').slick({
         dots: true,
         infinite: true,
-        swipe: true,
-        asNavFor: '.JS-info-slider',
         arrows: false,
-        autoplay: true,
         speed: 500,
         fade: true,
+        asNavFor: '.JS-info-slider',
         cssEase: 'linear'
     });
 });
